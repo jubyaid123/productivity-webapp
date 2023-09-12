@@ -1,16 +1,8 @@
 # Team Project Proposal
 
-Now that groups are formed, submit **one team project proposal** for approval. This proposal is a summary of the idea and similar to your individual proposals. The proposal requirements are listed below.
-
-## Project Proposal Requirements
-
-_Make sure your proposal contains the following 5 sections._
-
-_It should be **2 pages max**. You do not have to include mockups or data models at this time. We will work on those in your next team assignment._
-
 1. **Team Name:** EffiGenius                                                                                                  <br>
    **Project Name:** EffiFlow
-3. **Team Members**
+2. **Team Members**
     - Jubyaid Uddin
       + Email: 
       + Github username: jubyaid123
@@ -23,7 +15,9 @@ _It should be **2 pages max**. You do not have to include mockups or data models
       + Email:
       + Github username: riazahmed01
       + School: CCNY
-4. **Executive summary** (2 paragraphs)
+3. **Executive summary** (2 paragraphs)
+    - This application helps user organize and manage their time better using to-do lists, calenders, goal setting, time tracking for tasks etc (With the Possibility of an AI assitant). 
+
     - A summary/pitch of your project. This should include answers to the following:
         + What does the application do?
         + What is the motivation for your application?
