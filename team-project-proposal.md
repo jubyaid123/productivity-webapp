@@ -12,8 +12,8 @@
       + Github username: JohnsonChen22002
       + School: CCNY
     - Riaz Ahmed
-      + Email:
-      + Github username: riazahmed01
+      + Email: rahmed013@citymail.cuny.edu
+      + Github username: (riazahmed01)[https://github.com/riazahmed01]
       + School: CCNY
 3. **Executive summary** (2 paragraphs)
     - This application helps user organize and manage their time better using to-do lists, calenders, goal setting, time tracking for tasks etc (With the Possibility of an AI assitant). We find calender and task tracking apps very useful and almost a necessity when having a busy schedule. Most apps we used were great for a specific aspect of time management but lack or disregard other aspects. This web app would be targeted towards students and other professionals who need to organize their lives. 
