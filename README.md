@@ -36,7 +36,8 @@ To create a new branch:
 3. You must merge the fork and main repositry to see all changes in effect.
 
 Easy method:
-- Use the fork button on the top right side of the repoitory
+- Use the fork button on the top right side of the repoitory in GitHub
+- When you are in your fork, you will see a contribute and sync button on the top right, directly under the fork button. 
 
 
 Using GitHub CLI:
