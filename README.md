@@ -15,7 +15,7 @@ Alternative:
 - Run `git remote add origin https://github.com/jubyaid123/productivity-webapp`
 - Run `git pull origin master`
 
-### Crete branch
+### Create branch
 
 If you didn't fork and will be using the main repo, use branches. (Essentially making a separate folder so it does not interfere with main branch)
 
