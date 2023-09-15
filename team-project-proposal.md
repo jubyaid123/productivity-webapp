@@ -20,14 +20,13 @@
     - There are several applications and/or competitors available that offer features and functionalities similar to the we are envisioning. However, imagine having everything you need and want for your life journey all in one place. No more juggling between different websites or apps that offer only one or a few of these essential features. Our platform brings together all these features with comprehensive solution for all their needs under a single, user-friendly roof.
 
 5. **User-types**:
-    - Clearly define and describe the User-types for your application. 1 or more user-types depending on your idea.
-    - _Think of_: Sellers, Buyers, Administrator, Moderator, Content-creator, Consumer, Teachers, Students, etc...
+    - We only require normal user accounts as there is no need for moderation.
+      
 6. **User Stories**:
-    - List the most important actions for each user-type
-    - What are the most important workflows for users of your application
-    - To learn more about User stories read:
-        + https://dzone.com/articles/writing-user-stories-web
-        + https://www.mountaingoatsoftware.com/presentations/introduction-to-user-stories
+    - User can log in and log out
+    - User stays logged in if they close the app
+    - User can view calander
+    - user can make a to-do list
 
 ## Submit
 
