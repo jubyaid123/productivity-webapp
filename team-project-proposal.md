@@ -23,10 +23,11 @@
     - We only require normal user accounts as there is no need for moderation.
       
 6. **User Stories**:
+    - User can sign up 
     - User can log in and log out
     - User stays logged in if they close the app
     - User can view calander
-    - user can make a to-do list
+    - User can make a to-do list
 
 ## Submit
 
