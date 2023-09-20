@@ -36,10 +36,25 @@ Follow these steps to set up and run the project on your local machine:
    git clone https://github.com/jubyaid123/productivity-webapp
    ```
 2. Navigate to the project directory:
-  ```sh
-   cd yourproject
+   ```sh
+   cd productivity-webapp
    ```
-3. 
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
+## Built with
+
+This project is built with the following frameworks, libraries, and software:
+
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Next.js](https://nextjs.org/)
+- [Express](https://expressjs.com/)
 
 
    
