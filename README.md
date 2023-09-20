@@ -1,7 +1,7 @@
 <h3 align="center">EffiGenius</h3>
 
   <p align="center">
-    This is a task-management and productivity web app that allows users to keep track of their life using a calender and to do list
+    This is a task-management and productivity web app that allows users to keep track of their lives using a calendar and to-do list
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
