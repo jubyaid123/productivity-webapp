@@ -52,7 +52,7 @@ Follow these steps to set up and run the project on your local machine:
 This project is built with the following frameworks, libraries, and software:
 
 - [React](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [Next.js](https://nextjs.org/)
 - [Express](https://expressjs.com/)
 
