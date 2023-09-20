@@ -1,5 +1,67 @@
-# productivity-webapp
+<h3 align="center">EffiGenius</h3>
 
+  <p align="center">
+    This is a task-management and productivity web app that allows users to keep track of their lives using a calendar and to-do list
+    <br />
+    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+  </p>
+</div>
+
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+  # Installation
+
+Follow these steps to set up and run the project on your local machine:
+
+1. Clone this repository to your local machine:
+   ```sh
+   git clone https://github.com/jubyaid123/productivity-webapp
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd productivity-webapp
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
+## Built with
+
+This project is built with the following frameworks, libraries, and software:
+
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Next.js](https://nextjs.org/)
+- [Express](https://expressjs.com/)
+
+## Contributers 
+- [Jubyaid Uddin](https://github.com/jubyaid123)
+- [Riaz Ahmed](https://github.com/riazahmed01)
+- [Johnson Chen](https://github.com/JohnsonChen22002)
+   
+  
 ## GitHub Help
 
 ### Make a local directory to clone
