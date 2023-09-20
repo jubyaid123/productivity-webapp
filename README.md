@@ -56,7 +56,10 @@ This project is built with the following frameworks, libraries, and software:
 - [Next.js](https://nextjs.org/)
 - [Express](https://expressjs.com/)
 
-
+## Contributers 
+- [Jubyaid Uddin](https://github.com/jubyaid123)
+- [Riaz Ahmed](https://github.com/riazahmed01)
+- [Johnson Chen](https://github.com/JohnsonChen22002)
    
   
 ## GitHub Help
