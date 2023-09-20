@@ -49,6 +49,15 @@ Follow these steps to set up and run the project on your local machine:
    ```sh
    npm run dev
    ```
+
+## Features
+
+- [] User can sign up
+- [] User can log in and log out
+- [] User stays logged in if they close the app
+- [] User can view calander
+- [] User can make a to-do list
+
 ## Built with
 
 This project is built with the following frameworks, libraries, and software:
