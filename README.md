@@ -17,16 +17,25 @@
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Before you begin, ensure you have met the following requirements:
+
 * npm
   ```sh
   npm install npm@latest -g
   ```
+  # Installation
+
+Follow these steps to set up and run the project on your local machine:
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/yourproject.git
+   
   
 ## GitHub Help
 
