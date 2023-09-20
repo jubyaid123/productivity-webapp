@@ -1,4 +1,4 @@
-# <h3 align="center">EffiGenius</h3>
+# <h1 align="center">EffiGenius</h1>
 
   <p align="center">
     This is a task-management and productivity web app that allows users to keep track of their lives using a calendar and to-do list
@@ -26,8 +26,10 @@ Before you begin, ensure you have met the following requirements:
 * npm
   ```sh
   npm install npm@latest -g
+
   ```
-  ### Installation
+  
+### Installation
 
 Follow these steps to set up and run the project on your local machine:
 
