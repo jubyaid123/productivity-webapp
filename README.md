@@ -14,6 +14,22 @@
   </p>
 </div>
 
+## Features
+
+- [ ] User can sign up
+- [ ] User can log in and log out
+- [ ] User stays logged in if they close the app
+- [ ] User can view calander
+- [ ] User can make a to-do list
+
+## Built with
+
+This project is built with the following frameworks, libraries, and software:
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Next.js](https://nextjs.org/)
+- [Express](https://expressjs.com/)
 
 ## Getting Started
 
@@ -49,23 +65,6 @@ Follow these steps to set up and run the project on your local machine:
    ```sh
    npm run dev
    ```
-
-## Features
-
-- [ ] User can sign up
-- [ ] User can log in and log out
-- [ ] User stays logged in if they close the app
-- [ ] User can view calander
-- [ ] User can make a to-do list
-
-## Built with
-
-This project is built with the following frameworks, libraries, and software:
-
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Next.js](https://nextjs.org/)
-- [Express](https://expressjs.com/)
 
 ## Contributers 
 - [Jubyaid Uddin](https://github.com/jubyaid123)
