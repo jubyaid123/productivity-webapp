@@ -1,4 +1,4 @@
-# <h1 align="center">EffiFLow</h1>
+# <h1 align="center">EffiFlow</h1>
 
   <p align="center">
     This is a task-management and productivity web app that allows users to keep track of their lives using a calendar and to-do list
