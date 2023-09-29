@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'EffiGenius',
+  title: 'EffiFlow',
   description: 'Better way to organize and manage your tasks and time',
 }
 

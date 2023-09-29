@@ -11,7 +11,7 @@ const Home = () => {
           <br className=''></br>
           <span className='text-center blue_gradient'>All Your Tasks</span>
           </h1>
-          <p className='desc text-center'>EffiGenius is a task-management and productivity web-application. 
+          <p className='desc text-center'>EffiFlow is a task-management and productivity web-application. 
           We allow our users to manage all their needs in one place, using a calendar and to-do list.</p>
         </div>
         <Image className='items-center mt-5'
