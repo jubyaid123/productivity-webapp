@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Home = () => {
   return (
     <section className='w-full flex-center flex-col'>
-      <div className='md:grid md:grid-cols-2 items-center flex flex-col p-5'>
+      <div className='md:grid md:grid-cols-2 items-center flex flex-col p-5 mt-5'>
         <div>
           <h1 className='head_text text-center'>
           Manage & Organize
