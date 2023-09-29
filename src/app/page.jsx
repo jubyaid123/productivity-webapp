@@ -14,7 +14,7 @@ const Home = () => {
           <p className='desc text-center'>EffiGenius is a task-management and productivity web-application. 
           We allow our users to manage all their needs in one place, using a calendar and to-do list.</p>
         </div>
-        <Image className='item-center'
+        <Image className='items-center'
         src='/assets/home_img1.svg'
         alt=''
         width={300}
