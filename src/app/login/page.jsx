@@ -11,7 +11,7 @@ const Login = () => {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center mt-20">
           <h2 className="text-3xl mb-4">Login</h2>
           <form onSubmit={handleLogin} className="text-center">
             <div className="mb-4">
