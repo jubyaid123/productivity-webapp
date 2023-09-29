@@ -7,8 +7,8 @@ const Home = () => {
       <div className='md:grid md:grid-cols-2 items-center flex flex-col p-5 mt-5'>
         <div>
           <h1 className='head_text text-center'>
-          Manage & Organize
-          <br className='max-md:hidden'></br>
+          Manage & Organize 
+          <br className=''></br>
           <span className='text-center blue_gradient'>All Your Tasks</span>
           </h1>
           <p className='desc text-center'>EffiGenius is a task-management and productivity web-application. 
