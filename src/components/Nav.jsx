@@ -35,7 +35,20 @@ const nav = () => {
         </button>
       </div>
     </div>
-
+     {/*Mobile nav */}
+     <div className='sm:hidden flex relative'>
+      {/*Do user log in logic */}
+      <div className='flex'>
+        <Image
+          src='/assets/logo-color.svg'
+          alt='Nav Toggle'
+          width={30}
+          height={30}
+          className=''
+          onClick={()=> setNavToggle((prev) => !prev)}
+        />
+      </div>
+    </div>
    
 
     </nav>
