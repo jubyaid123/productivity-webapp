@@ -15,7 +15,7 @@ const Home = () => {
           <p className='desc text-center'>EffiFlow is a task-management and productivity web-application. 
           We allow our users to manage all their needs in one place, using a calendar and to-do list.</p>
           <div className= 'flex mt-10 blue_btn ml-40 mr-40 '>
-            <Link href= "/login" className=''>Get Started</Link>
+            <Link href= "/signup" className=''>Get Started</Link>
           </div>
         </div>
         <Image className='items-center mt-5'
