@@ -70,7 +70,7 @@
 /*Custom tailwind*/
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .head_text {
@@ -156,3 +156,29 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+.calender-placeholder {
+  background-color: grey;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #4df3ff;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  border-width: 4px;
+  border-color: black;
+}
+
+.calender {
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  text-align: center;
+  border-width: 4px;
+  border-color: black;
+  width: 100%;
+}
+
