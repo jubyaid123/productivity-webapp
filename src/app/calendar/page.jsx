@@ -1,12 +1,14 @@
-import Sidebar from '../../components/Sidebar'; 
+import React from 'react'
+import Sidebar from '../../components/Sidebar'
+import MonthlyCal from '../../components/MonthlyCal'
 
-const CalendarPage = () => {
+const Calendar = () => {
   return (
     <div className='md:grid-cols-2 calender-placeholder'>
       <Sidebar />
-      <div className='calender'>Calender</div>
+      <MonthlyCal/>
     </div>
-  );
-};
+  )
+}
 
-export default CalendarPage;
+export default Calendar
