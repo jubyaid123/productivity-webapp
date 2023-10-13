@@ -37,6 +37,7 @@ const Sidebar = () => {
                     <button className={collapseIconClasses} onClick={handleSidebarToggle}>
                         <CollapsIcon />
                     </button>
+
                 </div>
             </div>
         </div>
