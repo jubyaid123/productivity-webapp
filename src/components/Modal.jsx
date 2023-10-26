@@ -1,17 +1,19 @@
 "use client"
 import React, { useState } from "react";
 
-const Modal = ({ isOpen, onClose, onSave }) => {
+const Modal = ({ isOpen, onClose, onSave, addTask }) => {
     const [title, setTitle] = useState("");
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
     const [description, setDescription] = useState("");
   
-    const handleSave = () => {
+    const handleSaveTask = () => {
 
         const combinedDateTime = `${date} ${time}`;
       
-        onSave({ title, combinedDateTime, description });
+        const taskData = { title, combinedDateTime, description };
+
+        addTask(taskData);
 
         // Clear the input fields after saving
         setTitle("");
@@ -66,7 +68,7 @@ const Modal = ({ isOpen, onClose, onSave }) => {
                 />
             </div>
             <div className="modal-buttons">
-                <button className="save-button" onClick={handleSave}>Save</button>
+                <button className="save-button" onClick={handleSaveTask}>Save</button>
                 <button className="close-button" onClick={handleCancel}>Cancel</button>
             </div>
         </div>
