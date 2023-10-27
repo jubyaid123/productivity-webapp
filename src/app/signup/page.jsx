@@ -5,7 +5,9 @@ import Link from 'next/link'
 const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [name, setName] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleSignUp = (e) => {
@@ -17,13 +19,27 @@ const Signup = () => {
     <div className="flex flex-col items-center justify-center h-screen">
       <h2 className="text-3xl mb-4">Sign Up</h2>
       <form onSubmit={handleSignUp} className="text-center">
-        <div className="mb-4">
-          <label className="text-lg black text-center">Name:</label>
+        <div className="mb-4 flex flex-col items-center">
+          <div className='mb-2'>
+            <label className="text-lg black">First Name:</label>
+          </div>
           <input
             type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full py-2 px-4 border rounded"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            className="w-64 py-2 px-4 border rounded"
+            required
+          />
+        </div>
+        <div className="mb-4 flex flex-col items-center">
+        <div className="mb-2">
+          <label className="text-lg black">Last Name:</label>
+        </div>
+          <input
+            type="text"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className="w-64 py-2 px-4 border rounded"
             required
           />
         </div>
