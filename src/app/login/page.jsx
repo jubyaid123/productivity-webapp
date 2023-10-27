@@ -12,7 +12,7 @@ const Login = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center mt-20">
+    <div className="flex flex-col items-center justify-center mt-10">
       <h2 className="text-3xl mb-4">Login</h2>
       <form onSubmit={handleLogin} className="text-center">
         <div className="mb-4">
@@ -40,7 +40,7 @@ const Login = () => {
         </button>
       </form>
       <div>
-        <p>
+        <p className='py-4'>
           Don't have an account? Sign up <Link href="/signup" className='blue_gradient'>here</Link>
         </p>
       </div>

@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function MonthlyCal() {
   // Days of the week
-  const days = ["S", "M", "T", "W", "T", "F", "S"];
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   // Get the current date and set initial state
   const currentDate = dayjs();
@@ -15,14 +15,14 @@ export default function MonthlyCal() {
   const [selectDate, setSelectDate] = useState(currentDate);
 
   return (
-    <div className="mt-10 ml-10 flex gap-10 sm:divide-x justify-center sm:w-3/4 mx-auto h-screen items-center sm:flex-row flex-col">
+    <div className=" select-none mt-10 ml-10 flex justify-center sm:w-full mx-auto h-screen items-center sm:flex-row flex-col">
       <div className="w-4/5 h-full ml-10">
-        <div className="flex justify-between items-center mb-4 ml-5">
+        <div className="flex justify-center flex-col items-center">
           {/* Display the current month and year */}
-          <h1 className="select-none text-3xl font-semibold">
+          <h1 className="text-4xl font-semibold mb-4">
             {months[today.month()]}, {today.year()}
           </h1>
-          <div className="flex gap-10 items-center">
+          <div className="flex">
             {/* Navigate to the previous month */}
             <GrFormPrevious
               className="w-8 h-8 cursor-pointer hover:scale-105 transition-all"
@@ -48,12 +48,12 @@ export default function MonthlyCal() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-7">
+        <div className="grid grid-cols-7 text-xl ">
           {days.map((day, index) => (
             // Display the days of the week
             <h1
               key={index}
-              className="ml-4 text-xl text-center h-16 w-16 grid place-content-center text-gray-500 select-none"
+              className=" text-[30px] text-center h-16 w-50 grid place-content-center text-gray-500 select-none"
             >
               {day}
             </h1>
@@ -65,12 +65,12 @@ export default function MonthlyCal() {
             ({ date, currentMonth, today }, index) => (
               <div
                 key={index}
-                className="p-4 text-center h-16 grid place-content-center text-xl border-t">
+                className="p-4 text-center h-60 grid mx-auto text-xl border-t">
                 <h1
                   className={calBool(
                     // Style for current month and selected date
                     currentMonth ? "" : "text-gray-400",
-                    today ? "bg-red-600 text-white" : "",
+                    today ? "bg-blue-600 text-white" : "",
                     selectDate.toDate().toDateString() === date.toDate().toDateString()
                       ? "bg-black text-white"
                       : "",
@@ -87,13 +87,6 @@ export default function MonthlyCal() {
             )
           )}
         </div>
-        <div className="mt-10 sm:px-5">
-         {/*Display the schedule for the selected date*/}
-        <h1 className="text-2xl font-semibold">
-          Schedule for {selectDate.toDate().toDateString()}
-        </h1>
-        <p className="text-gray-400">No remaining tasks for today.</p>
-      </div>
       </div>
     </div>
   );
