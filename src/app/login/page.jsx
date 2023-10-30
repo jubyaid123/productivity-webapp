@@ -6,9 +6,30 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // login logic
+    try {
+      const response = await fetch('http://localhost:3001/api/users/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      });
+  
+      if (response.ok) {
+        // Redirect the user to the desired page upon successful login
+        window.location.href = '/calendar';
+      } else {
+        console.error('Invalid email or password');
+      }
+    } catch (error) {
+      console.error('Error during login:', error.message);
+    }
+    
   }
 
   return (

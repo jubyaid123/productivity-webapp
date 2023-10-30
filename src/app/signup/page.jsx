@@ -10,10 +10,39 @@ const Signup = () => {
 
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSignUp = (e) => {
+  const handleSignUp = async (e) => {
     e.preventDefault();
-    // login logic
-  }
+  
+      if(password !== confirmPassword){
+        alert('Passwords do not match');
+        setPassword('');
+        setConfirmPassword('');
+        return;
+      }
+      try {
+        const response = await fetch('http://localhost:3001/api/users', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            first_name: firstName,
+            last_name: lastName,
+            email,
+            password,
+          }),
+        });
+    
+        if (response.ok) {
+          window.location.href = '/calendar';
+        } else {
+          console.error('Error creating user:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error creating user:', error.message);
+      }
+    
+  };
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
