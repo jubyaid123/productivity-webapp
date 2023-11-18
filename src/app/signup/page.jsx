@@ -107,7 +107,7 @@ const Signup = () => {
         </button>
       </form>
       <div>
-        <p>
+        <p className="pb-10">
           Already have an account? login <Link href= "/login" className='blue_gradient'>here</Link>
         </p>
       </div>

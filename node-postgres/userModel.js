@@ -30,8 +30,26 @@ const createUser = (user) => {
   );
 };
 
+const createTask = async ({ userId, title, task_date, description }) => {
+  const query = `
+      INSERT INTO tasks (user_id, title, task_date, description)
+      VALUES ($1, $2, $3, $4)
+      RETURNING *;  // Returns the newly created task
+  `;
+
+  const values = [userId, title, task_date, description];
+
+  try {
+      const result = await pool.query(query, values);
+      return result.rows[0]; // Return the created task
+  } catch (error) {
+      throw error;
+  }
+};
+
 module.exports = {
   getUserById,
   getUserByEmail,
   createUser,
+  createTask
 };

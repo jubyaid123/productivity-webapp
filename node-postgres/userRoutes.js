@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const userModel = require('./userModel'); // Assuming userModels.js is in the same directory
+const userModel = require('./userModel'); 
 
 
 
@@ -29,26 +29,20 @@ router.post('/users', async (req, res) => {
   }
 });
 
-router.post('/api/users/login', async (req, res) => {
-  console.log('Login endpoint accessed'); // Log to check if the endpoint is accessed
-  console.log('Received data:', email, password); // Log to check if request body is received correctly
-
+router.post('/users/login', async (req, res) => {
   const { email, password } = req.body;
-
   try {
     const user = await userModel.getUserByEmail(email);
-    if (user.rows.length === 0 || user.rows[0].password !== password) {
-      // If no user is found with the given email or password doesn't match, return 401 Unauthorized
+    if (user.length === 0 || user[0].password !== password) {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
 
     res.json({ message: 'Login successful' });
   } catch (error) {
     console.error('Error during login:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Internal  Error' });
   }
 });
-
 
 
 module.exports = router;

@@ -15,6 +15,12 @@ const Modal = ({ isOpen, onClose, onSave, addTask }) => {
 
         addTask(taskData);
 
+        // try{
+        //     const response = await fetch('')
+        // }
+
+
+
         // Clear the input fields after saving
         setTitle("");
         setDate("");
