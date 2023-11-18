@@ -23,7 +23,7 @@ const Home = () => {
         alt=''
         width={300}
         height={300}
-        layout="responsive"
+        layout={'responsive'}
         />
       </div>
     </section>
