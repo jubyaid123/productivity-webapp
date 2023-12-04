@@ -1,9 +1,9 @@
-'use cleint'
+'use client'
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin, { Draggable } from '@fullcalendar/interaction';
 import timeGridPlugin from '@fullcalendar/timegrid';
-import { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { ExclamationTriangleIcon, CheckIcon } from '@heroicons/react/20/solid';
 import './calendar.modules.css'
@@ -16,7 +16,31 @@ export default function Home() {
     { title: 'event 4', id: '4' },
     { title: 'event 5', id: '5' },
   ]);
-  const [allEvents, setAllEvents] = useState([]);
+
+  const [allEvents, setAllEvents] = useState(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const storedEvents = localStorage.getItem('events');
+      try {
+        return storedEvents ? JSON.parse(storedEvents) : [
+          { title: 'event 1', id: '1' },
+          { title: 'event 2', id: '2' },
+          { title: 'event 3', id: '3' },
+          { title: 'event 4', id: '4' },
+          { title: 'event 5', id: '5' },
+        ];
+      } catch (error) {
+        console.error('Error parsing stored events:', error);
+        return [];
+      }
+    } else {
+      return [];
+    }
+  });
+  
+  useEffect(() => {
+    localStorage.setItem('events', JSON.stringify(allEvents));
+  }, [allEvents]);
+  
   const [showModal, setShowModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [idToDelete, setIdToDelete] = useState(null);
@@ -50,7 +74,7 @@ export default function Home() {
   function addEvent(data) {
     const event = { ...newEvent, start: data.date.toISOString(), title: data.draggedEl.innerText, allDay: data.allDay, id: new Date().getTime() };
     setAllEvents([...allEvents, event]);
-  }
+  }   
 
   function handleDeleteModal(data) {
     setShowDeleteModal(true);
