@@ -24,18 +24,16 @@ const nav = () => {
     <div className='sm:flex hidden'>
       {/*Do user log in logic */}
       <div className='flex gap-3 md:gap-5'>
+        {<Link href='/profile' className='black_btn'>
+          Profile
+        </Link>}
         {<Link href='/signup' className='black_btn'>
           Sign Up
         </Link>}
         {<Link href='/login' className='black_btn'>
           Log in
         </Link>}
-        {/*<button type='button' className='black_btn'>
-          Sign up
-        </button>
-        <button type='button' className='outline_btn'>
-          Log in
-        </button>*/}
+        
       </div>
     </div>
      {/*Mobile nav */}
