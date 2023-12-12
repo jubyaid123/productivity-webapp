@@ -7,41 +7,43 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleSignUp = async (e) => {
     e.preventDefault();
-  
-      if(password !== confirmPassword){
-        alert('Passwords do not match');
-        setPassword('');
-        setConfirmPassword('');
-        return;
+
+    if (password !== confirmPassword) {
+      alert('Passwords do not match');
+      setPassword('');
+      setConfirmPassword('');
+      return;
+    }
+    try {
+      const response = await fetch('http://localhost:3001/api/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          first_name: firstName,
+          last_name: lastName,
+          email,
+          password,
+        }),
+      });
+
+      if (response.ok) {
+        window.location.href = '/calendar';
+        localStorage.setItem('userFirstName', firstName);
+        localStorage.setItem('userLastName', lastName);
+        localStorage.setItem('userEmail', email)
+      } else {
+        console.error('Error creating user:', response.statusText);
       }
-      try {
-        const response = await fetch('http://localhost:3001/api/users', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            first_name: firstName,
-            last_name: lastName,
-            email,
-            password,
-          }),
-        });
-    
-        if (response.ok) {
-          window.location.href = '/calendar';
-        } else {
-          console.error('Error creating user:', response.statusText);
-        }
-      } catch (error) {
-        console.error('Error creating user:', error.message);
-      }
-    
+    } catch (error) {
+      console.error('Error creating user:', error.message);
+    }
+
   };
 
   return (
@@ -61,9 +63,9 @@ const Signup = () => {
           />
         </div>
         <div className="mb-4 flex flex-col items-center">
-        <div className="mb-2">
-          <label className="text-lg black">Last Name:</label>
-        </div>
+          <div className="mb-2">
+            <label className="text-lg black">Last Name:</label>
+          </div>
           <input
             type="text"
             value={lastName}
@@ -92,8 +94,8 @@ const Signup = () => {
             required
           />
         </div>
-        <div className = "mb-4">
-        <label className="text-lg block"> Confirm Password:</label>
+        <div className="mb-4">
+          <label className="text-lg block"> Confirm Password:</label>
           <input
             type="password"
             value={confirmPassword}
@@ -101,14 +103,14 @@ const Signup = () => {
             className="w-64 py-2 px-4 border rounded"
             required
           />
-        </div> 
+        </div>
         <button type="submit" className="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Sign Up
         </button>
       </form>
       <div>
         <p className="pb-10">
-          Already have an account? login <Link href= "/login" className='blue_gradient'>here</Link>
+          Already have an account? login <Link href="/login" className='blue_gradient'>here</Link>
         </p>
       </div>
     </div>

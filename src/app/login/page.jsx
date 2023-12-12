@@ -17,11 +17,15 @@ const Login = () => {
         body: JSON.stringify({
            email,
            password,
+           
+
          }),
       });
   
       if (response.ok) {
-        // Redirect the user to the desired page upon successful login
+        const data = await response.json()
+
+        localStorage.setItem('userEmail', email);
         window.location.href = '/calendar';
       } else {
         alert('wrong email or password');

@@ -1,14 +1,16 @@
 'use client'
-import React, { useState } from 'react';
 import Image from 'next/image'
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link'
+
+
 
 const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: 'John',
-    lastName: 'Doe',
-    email: 'john.doe@example.com',
-    // I assume you can query and get these info from the db
+    firstName: '',
+    lastName: '',
+    email: '',
   });
 
   const [passwordData, setPasswordData] = useState({
@@ -16,6 +18,22 @@ const Profile = () => {
     newPassword: '',
     confirmPassword: '',
   });
+
+  useEffect(() => {
+    // Retrieve user info from localStorage
+    const storedFirstName = localStorage.getItem('userFirstName');
+    const storedLastName = localStorage.getItem('userLastName');
+    const storedEmail = localStorage.getItem('userEmail');
+
+      setFormData(prevFormData => ({
+        ...prevFormData,
+        firstName: storedFirstName || prevFormData.firstName,
+        lastName: storedLastName || prevFormData.lastName,
+        email: storedEmail || prevFormData.email
+      }));
+    
+  }, []);
+
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -40,6 +58,10 @@ const Profile = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  const handleTimerClick = (e) => {
+    <Link href='/signup'></Link>
+    
+  }
 
   return (
     <div className="container mx-auto p-4">
@@ -156,6 +178,15 @@ const Profile = () => {
               </div>
             </form>
           </div>
+          <div className="max-w-md mx-auto mt-8 p-8 border rounded shadow">
+            <h2 className="text-lg font-bold mb-2">Pomodoro Timer</h2>
+              <Link href='/timer' className="flex items-center justify-center bg-blue-500 text-white p-2 rounded-[5px]">
+                 Start Timer
+              </Link>
+
+
+          </div>
+
         </div>
       </div>
     </div>
