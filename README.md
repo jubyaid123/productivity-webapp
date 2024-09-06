@@ -1,23 +1,35 @@
-# <h1 align="center">EffiFlow</h1>
+<h1 align="center">EffiFlow</h1>
 
-  <p align="center">
-    This is a task-management and productivity web app that allows users to keep track of their lives using a calendar and to-do list
-    <br />
-    Landing page
-    <br/>
-    ![landing page](./images/Landing Page EffiFlow.png)
+<p align="center">
+    This is a task-management and productivity web app that allows users to keep track of their daily tasks and responsibilities using a calendar and to-do list.
+</p>
 
+<h3 align="center">Landing page</h3>
 
-  </p>
-</div>
+<p align="center">
+  <img src="./images/Landing%20Page%20EffiFlow.png" alt="landing page" />
+</p>
+<h3 align="center"> Calendar Page</h3>
+
+<p align="center">
+  <img src="./images/Calendar%20Page%20EffiFlow.png" alt="landing page" />
+</p>
+<h3 align="center">Profile Page</h3>
+
+<p align="center">
+  <img src="./images/Profile%20Page%20EffiFlow.png" alt="landing page" />
+</p>
+
 
 ## Features
 
 - [ ] User can sign up
 - [ ] User can log in and log out
 - [ ] User stays logged in if they close the app
-- [ ] User can view calander
-- [ ] User can make a to-do list
+- [ ] User can view and edit calander
+- [ ] User can make to-do lists
+- [ ] User can edit their profile
+- [ ] User can utilize Pomodoro Timer
 
 ## Built with
 
