@@ -5,7 +5,7 @@
     <br />
     Landing page
     <br/>
-    ![landing page](.images/Landing Page EffiFlow.png)
+    ![landing page](./images/Landing Page EffiFlow.png)
 
 
   </p>
